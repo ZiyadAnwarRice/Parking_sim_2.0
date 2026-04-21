@@ -209,8 +209,8 @@ def build_world(selected_spot: str) -> Scene:
     # ----------------------------
     # Car
     # ----------------------------
-    start_pos = [-4.0, -3.3, 0.20]
-    start_yaw = 0.0
+    start_pos = [ENTRY_X, -4.3, 0.20]
+    start_yaw = math.pi / 2
     start_orn = p.getQuaternionFromEuler([0, 0, start_yaw])
 
     car = p.loadURDF("racecar/racecar.urdf", start_pos, start_orn)
